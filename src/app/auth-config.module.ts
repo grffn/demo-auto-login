@@ -14,9 +14,8 @@ export const configureAuth = (oidcConfigService: OidcConfigService) => {
       startCheckSession: false,
       silentRenew: true,
       silentRenewUrl: `${window.location.origin}/silent-renew.html`,
-      postLoginRoute: '/home',
-      forbiddenRoute: '/forbidden',
-      unauthorizedRoute: '/unauthorized',
+      postLoginRoute: '/',
+      unauthorizedRoute: '/',
       logLevel: LogLevel.Debug,
       historyCleanupOff: true,
       // iss_validation_off: false

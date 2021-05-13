@@ -9,13 +9,7 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 export class AppComponent implements OnInit {
   constructor(private oidcSecurityService: OidcSecurityService) {}
 
-  ngOnInit() {
-    this.oidcSecurityService.checkAuth().subscribe((isAuthenticated) => {
-      console.log('app authenticated', isAuthenticated);
-      const at = this.oidcSecurityService.getToken();
-      console.log(`Current access token is '${at}'`);
-    });
-  }
+  ngOnInit() {}
 
   login() {
     console.log('start login');
